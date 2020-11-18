@@ -49,7 +49,8 @@ body {
 }
 
 .nav-list .link:hover,
-.nav-list .link:focus {
+.nav-list .link:focus,
+.nav-list .link.current {
     color: var(--accent-color);
 }
 
@@ -221,4 +222,3 @@ body {
     line-height: 1.9;
     color: var(--second-text-color);
 }
-
