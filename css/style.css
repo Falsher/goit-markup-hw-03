@@ -27,12 +27,10 @@ body {
 
 /*header*/
 
-#header {
+#header .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 215px;
-    padding-right: 215px;
 }
 
 .main-nav {
@@ -90,6 +88,17 @@ body {
 .nav-contacts .link:focus,
 .nav-contacts .link:hover {
     color: var(--accent-color)
+}
+
+
+/*class container*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
