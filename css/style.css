@@ -120,8 +120,8 @@ body {
 .hero {
     background-color: #2F303A;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    /* padding-top: 200px;
+    padding-bottom: 200px;*/
 }
 
 .hero-discription h1 {
@@ -157,9 +157,27 @@ body {
 
 /*features*/
 
+.features {
+    margin-top: 94px;
+    margin-bottom: 94px
+}
+
 .features-link h3,
 .features-link p {
     text-align: left;
+}
+
+.features-link {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-link li {
+    width: 270px;
+}
+
+.features-link li:nth-child(n + 2) {
+    margin-left: 30px;
 }
 
 .features-link h3 {
@@ -169,6 +187,7 @@ body {
     font-weight: 700;
     color: var(--primary-text-color);
     text-transform: uppercase;
+    padding-bottom: 10px
 }
 
 .features-link p {
@@ -190,8 +209,14 @@ body {
     text-align: center;
 }
 
+.img-link {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/*our team*/
+.img-link .img-item:nth-child(n + 2) {
+    margin-left: 30px;
+}
 
 .command-link h3 {
     font-size: 16px;
