@@ -319,6 +319,12 @@ address p {
     color: var(--first-color);
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .filters button {
     font-family: 'Roboto', sans-serif;
     background-color: #F5F4FA;
@@ -329,12 +335,68 @@ address p {
     font-weight: 500;
 }
 
+.filters li:not(:first-child) {
+    margin-left: 8px;
+}
+
 
 /*projects*/
+
+.logo-first {
+    text-shadow: none
+}
+
+.button-link:hover,
+.button-link:focus {
+    background: var(--accent-color);
+}
+
+.button-link {
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+}
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    display: block;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.flex-element a img {
+    display: block
+}
+
+.flex-element {
+    background: #fff;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.flex-element:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
 
 .projects h3 {
     font-size: 18px;
     line-height: 2;
+    font-weight: 700px;
     color: var(--primary-text-color);
 }
 
