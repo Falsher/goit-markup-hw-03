@@ -120,8 +120,8 @@ body {
 .hero {
     background-color: #2F303A;
     text-align: center;
-    /* padding-top: 200px;
-    padding-bottom: 200px;*/
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-discription h1 {
@@ -158,8 +158,8 @@ body {
 /*features*/
 
 .features {
-    margin-top: 94px;
-    margin-bottom: 94px
+    padding-top: 94px;
+    padding-bottom: 94px
 }
 
 .features-link h3,
@@ -198,7 +198,11 @@ body {
 }
 
 
-/*section*/
+/*we doing*/
+
+.doing {
+    padding-bottom: 94px;
+}
 
 .section-title {
     font-size: 36px;
@@ -207,15 +211,29 @@ body {
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .img-link {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.img-link .img-item:nth-child(n + 2) {
+.img-item:nth-child(n + 2) {
     margin-left: 30px;
+}
+
+
+/*team*/
+
+.ourteam {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+}
+
+.command-link {
+    display: flex;
+    justify-content: space-between;
 }
 
 .command-link h3 {
@@ -225,6 +243,15 @@ body {
     font-weight: 500;
     color: var(--primary-text-color);
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.command-link li {
+    background: #fff;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .command-link p {
@@ -240,14 +267,18 @@ body {
 
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
+    display: block;
     font-family: Raleway, sans-serif;
     font-size: 26px;
     line-height: 1.2;
     font-weight: 700;
     color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .footer address {
@@ -261,6 +292,14 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: var(--second-text-color);
+}
+
+address p {
+    margin-bottom: 9px;
+}
+
+.footer-link li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-link a:hover,
