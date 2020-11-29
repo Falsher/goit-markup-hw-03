@@ -24,24 +24,40 @@ body {
     background-color: var(--first-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /*header*/
 
+#header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .main-nav {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
 .nav-list,
 .nav-contacts {
     display: flex;
+    margin-left: auto;
 }
 
 .logo {
@@ -51,6 +67,7 @@ body {
     font-weight: 700;
     color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 43px;
 }
 
 .color-logo {
@@ -64,8 +81,8 @@ body {
     padding-bottom: 32px;
 }
 
-.nav-list {
-    margin-left: 43px;
+.nav-list .item:nth-child(-n+2) {
+    margin-right: 50px
 }
 
 .nav-list .link {
@@ -74,11 +91,10 @@ body {
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.02em;
-    margin-left: 50px
 }
 
-.nav-contacts .item:last-child {
-    margin-left: 50px;
+.nav-contacts .item:first-child {
+    margin-right: 50px;
 }
 
 .nav-list .link:hover,
@@ -147,7 +163,6 @@ body {
     text-align: center;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    ;
 }
 
 .hero-discription .hero-button:hover {
@@ -176,8 +191,8 @@ body {
     width: 270px;
 }
 
-.features-link li:nth-child(n + 2) {
-    margin-left: 30px;
+.features-link li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-link h3 {
@@ -218,8 +233,8 @@ body {
     display: flex;
 }
 
-.img-item:nth-child(n + 2) {
-    margin-left: 30px;
+.img-item:nth-child(-n + 2) {
+    margin-right: 30px;
 }
 
 
@@ -236,6 +251,10 @@ body {
     justify-content: space-between;
 }
 
+.command-link img {
+    margin-bottom: 30px
+}
+
 .command-link h3 {
     font-size: 16px;
     line-height: 1.2;
@@ -243,7 +262,6 @@ body {
     font-weight: 500;
     color: var(--primary-text-color);
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -317,12 +335,13 @@ address p {
 .filters button:focus {
     background: var(--accent-color);
     color: var(--first-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .filters button {
@@ -335,8 +354,8 @@ address p {
     font-weight: 500;
 }
 
-.filters li:not(:first-child) {
-    margin-left: 8px;
+.filters li:not(:last-child) {
+    margin-right: 8px;
 }
 
 
@@ -365,6 +384,8 @@ address p {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+    /*ужимаем маржины флексм-элементов*/
 }
 
 .project-item {
@@ -381,11 +402,15 @@ address p {
 }
 
 .flex-element {
-    background: #fff;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    /*width: calc((100% - 60px) / 3);
+    margin-right:30px;
+    margin-bottom: 30px;*/
+    width: 370px;
+    margin: 15px;
 }
 
+
+/*
 .flex-element:nth-child(3n) {
     margin-right: 0px;
 }
@@ -393,6 +418,7 @@ address p {
 .flex-element:nth-last-child(-n + 3) {
     margin-bottom: 0px;
 }
+*/
 
 .projects h3 {
     font-size: 18px;
