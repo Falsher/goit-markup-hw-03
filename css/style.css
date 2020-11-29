@@ -375,6 +375,7 @@ address p {
     padding: 20px 24px;
 }
 
+.flex-element a,
 .flex-element a img {
     display: block
 }
